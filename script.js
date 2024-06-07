@@ -1,12 +1,12 @@
-const date = new Date();
-let display = document.getElementById('digital-clock');
-function timer() {
-    display.innerHTML = `<h2 class="date">${date.toDateString()}</h2>
-<p class="time">
-${date.toLocaleTimeString()}
-</p>`
+
+
+function timer(){
+    let date = new Date();
+
+let display = document.getElementById("digital-clock")
+    display.innerHTML = `
+    <h2 id="date">${date.toDateString()}</h2>
+    <p id="time">${date.toLocaleTimeString()}</p>`
+    
 }
-setInterval(timer(), 1000);
-
-
-
+setInterval(timer, 100);
